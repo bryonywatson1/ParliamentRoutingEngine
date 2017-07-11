@@ -1,4 +1,4 @@
-# ParliamentRoutingEngine
+# parliament_engine
 
 [parliament_routing_engine][parliament_routing_engine] is an engine created by the [Parliamentary Digital Service][pds] that holds all of the routes for the UK parliament prototype website, which can then be called upon by any applications that include this gem.
 
@@ -47,14 +47,14 @@ The engine works in the background adding routes to the application that uses it
 In order to run the engine, mount the engine within your application's routes.rb:
 ```ruby
 Rails.application.routes.draw do
-  mount ParliamentRoutingEngine::Engine => "/parliament_routing_engine"
+  mount Parliament::Engine::Engine => "/parliament_engine"
 end
 ```
 
 ## Getting Started with Development
 To clone the repository and set up the dependencies, run the following:
 ```bash
-git clone https://github.com/bryonywatson1/ParliamentRoutingEngine.git d
+git clone https://github.com/bryonywatson1/ParliamentRoutingEngine.git
 cd ParliamentRoutingEngine
 bundle install
 ```
